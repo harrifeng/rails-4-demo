@@ -11,6 +11,7 @@
     </div>
   <% end %>
 
+  <p>Date: <input type="text" id="datepicker" name="hfeng"></p>
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
@@ -23,3 +24,8 @@
     <%= f.submit %>
   </div>
 <% end %>
+<script>
+ $( function() {
+   $( "#datepicker" ).datepicker();
+ } );
+</script>
